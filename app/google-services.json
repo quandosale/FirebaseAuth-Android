@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "922162166114",
+    "firebase_url": "https://calm-172003.firebaseio.com",
+    "project_id": "calm-172003",
+    "storage_bucket": "calm-172003.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922162166114:android:8245c10b1c43c4a9",
+        "android_client_info": {
+          "package_name": "com.calm_health.sports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922162166114-jjeo8enadpdv71r12nnc780v4jkib4aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe46kwJ99lwYxXBhm6Op6-4Yiktm9gzhw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
