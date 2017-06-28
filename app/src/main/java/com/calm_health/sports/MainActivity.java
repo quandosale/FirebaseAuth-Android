@@ -111,7 +111,8 @@ public class MainActivity extends AppCompatActivity implements AuthResultEvent, 
         btnFacebook.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                Log.d("facebook login", loginResult.getAccessToken() + "");
+                Log.d("facebook login success", loginResult.getAccessToken() + "");
+                mAuthProvider.firebaseAuthWithFacebook(loginResult.getAccessToken());
             }
 
             @Override
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements AuthResultEvent, 
 
             @Override
             public void onError(FacebookException error) {
-                Log.d("facebook login", error.getMessage());
+                Log.d("facebook login error", error.getMessage());
             } });
 
         btnLogout.setOnClickListener(new View.OnClickListener() {
@@ -156,7 +157,7 @@ public class MainActivity extends AppCompatActivity implements AuthResultEvent, 
 
     @Override
     public void onFacebookAuthResult(FirebaseUser user, String message) {
-        Log.d("facebook result", message);
+        Log.d("facebook result", user.getDisplayName());
     }
 
     @Override
